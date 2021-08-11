@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<all-accounts>
+        
+    <account>
+                
+        <id>20</id>
+                
+        <login>Первый</login>
+                
+        <password>1</password>
+                
+        <enabled>true</enabled>
+                
+        <birthday>2021-07-01</birthday>
+                
+        <country>Belarus</country>
+            
+    </account>
+    
+    <account>
+        <id>26</id>
+        <login>Второй</login>
+        <password>2</password>
+        <enabled>true</enabled>
+        <birthday>2021-07-15</birthday>
+        <country>Ukraine</country>
+    </account>
+</all-accounts>

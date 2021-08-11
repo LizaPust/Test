@@ -1,0 +1,87 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<GridPane fx:controller="com.stormnet.cp.client.forms.profiles.ProfileController"
+          xmlns:fx="http://javafx.com/fxml" alignment="TOP_LEFT" hgap="10" vgap="10">
+
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Label text="Enter your name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField fx:id="loginField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <CheckBox fx:id="isEnabled" text="Is User Enabled?" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <RadioButton fx:id="maleBtn" text="Male"  GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <RadioButton fx:id="femaleBtn" text="Female" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <DatePicker fx:id="birthday" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="6" >
+        <ComboBox fx:id="countries">
+
+        </ComboBox>
+
+        <TextField fx:id="newCountry" />
+
+        <Button text="Add Country" onAction="#addCountryBtnPressed" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+    </HBox>
+
+    <TextArea fx:id="allStrs" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+
+    <Button text="Save Account" onAction="#saveBtnPressed" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+
+    <TableView fx:id="allAccountsGrig" GridPane.rowIndex="9" GridPane.columnIndex="0" GridPane.columnSpan="2">
+        <columns>
+            <TableColumn prefWidth="150" text="Login">
+                <cellValueFactory>
+                    <PropertyValueFactory property="login" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Password">
+                <cellValueFactory>
+                    <PropertyValueFactory property="password" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Is Enabled">
+                <cellValueFactory>
+                    <PropertyValueFactory property="enabled" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Sex">
+                <cellValueFactory>
+                    <PropertyValueFactory property="maleTitle" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Birthday">
+                <cellValueFactory>
+                    <PropertyValueFactory property="birthday" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Country">
+                <cellValueFactory>
+                    <PropertyValueFactory property="country" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="150" text="Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description" />
+                </cellValueFactory>
+            </TableColumn>
+
+        </columns>
+
+    </TableView>
+
+</GridPane>

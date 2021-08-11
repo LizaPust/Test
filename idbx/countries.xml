@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<all-countries>
+	<country>
+		<id>1</id>
+		<name>Belarus</name>
+		<code>BY</code>
+	</country>
+	<country>
+		<id>2</id>
+		<name>Russia</name>
+		<code>RU</code>
+	</country>
+	<country>
+		<id>3</id>
+		<name>Ukraine</name>
+		<code>UA</code>
+	</country>
+    <country>
+        <id>4</id>
+        <name>United States</name>
+        <code>USA</code>
+    </country>
+</all-countries>

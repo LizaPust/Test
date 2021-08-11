@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<db>
+                                    
+    
+    
+    
+    
+    
+    
+    
+    <db-tables>
+                                                                        
+        
+        
+        
+        
+        
+        
+        
+        <db-table name="accounts" table-file="accounts.xml">
+                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            <max-id-value>26</max-id-value>
+                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        </db-table>
+                                                                        
+        
+        
+        
+        
+        
+        
+        
+        <db-table name="countries" table-file="countries.xml">
+                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            <max-id-value>4</max-id-value>
+                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        </db-table>
+                                                                    
+    
+    
+    
+    
+    
+    
+    
+    </db-tables>
+                                
+
+
+
+
+
+
+
+</db>
